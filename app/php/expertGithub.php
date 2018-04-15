@@ -1,7 +1,9 @@
 <?php
+  header("Access-Control-Allow-Origin:*");
+
   $major = $_REQUEST['major'];
 
-  $link = mysqli_connect('127.0.0.1','root','','expert');
+  $link = mysqli_connect('localhost','root','024009','expert');
 
   $sql = "select * from experts where major = '$major'";
 
@@ -15,5 +17,5 @@
     $expert=array("name"=>$arr['name'],"src"=>$arr['img'],"title"=>$arr['title'],"detail"=>$arr['detail']);
     array_push($experts,$expert);
   };
-  echo $experts;
+  echo json_encode($experts);
 ?>
