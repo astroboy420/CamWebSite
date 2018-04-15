@@ -12885,7 +12885,7 @@ if (false) {(function () {
     },
     expert: function (major) {
       let vthis = this;
-      __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('./static/php/expert.php',{
+      __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('http://47.94.14.210/myProject/camtest/static/php/expert.php',{
         params:{major:major}
       })
       .then(function(res){
@@ -12900,7 +12900,7 @@ if (false) {(function () {
   },
   created: function (){
     let vthis = this;
-      __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('./static/php/expert.php',{
+      __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('http://47.94.14.210/myProject/camtest/static/php/expert.php',{
         params:{major:'制造专家'}
       })
       .then(function(res){
@@ -26032,7 +26032,13 @@ var render = function() {
       { staticClass: "expertsList" },
       _vm._l(_vm.experts, function(item) {
         return _c("li", { key: item.name, staticClass: "expertsItem" }, [
-          _c("img", { attrs: { src: "./static/userlogo/" + item.src } }),
+          _c("img", {
+            attrs: {
+              src:
+                "http://47.94.14.210/myProject/camtest/static/userlogo/" +
+                item.src
+            }
+          }),
           _vm._v(" "),
           _c("section", [
             _c("h4", [_vm._v(_vm._s(item.name) + " | " + _vm._s(item.title))]),

@@ -831,6 +831,7 @@ button.swiper-pagination-bullet {
 }
 .expertsBanner img {
   width: 100%;
+  display: block;
 }
 .experts {
   background: #fff;
