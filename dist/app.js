@@ -12885,7 +12885,7 @@ if (false) {(function () {
     },
     expert: function (major) {
       let vthis = this;
-      __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('http://47.94.14.210/myProject/camtest/static/php/expert.php',{
+      __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('http://47.94.14.210/myProject/camtest/static/php/expertGithub.php',{
         params:{major:major}
       })
       .then(function(res){
@@ -12900,7 +12900,7 @@ if (false) {(function () {
   },
   created: function (){
     let vthis = this;
-      __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('http://47.94.14.210/myProject/camtest/static/php/expert.php',{
+      __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('http://47.94.14.210/myProject/camtest/static/php/expertGithub.php',{
         params:{major:'制造专家'}
       })
       .then(function(res){
