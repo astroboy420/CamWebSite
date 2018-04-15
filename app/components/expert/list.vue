@@ -5,7 +5,7 @@
     </ul>
     <ul class="expertsList">
       <li class="expertsItem" v-for="item in experts" :key="item.name">
-        <img :src="'./static/userlogo/'+item.src">
+        <img :src="'http://47.94.14.210/myProject/camtest/static/userlogo/'+item.src">
         <section>
           <h4>{{item.name}} | {{item.title}}</h4>
           <p>{{item.detail}}</p>
@@ -49,7 +49,7 @@
       },
       expert: function (major) {
         let vthis = this;
-        axios.get('./static/php/expert.php',{
+        axios.get('http://47.94.14.210/myProject/camtest/static/php/expertGithub.php',{
           params:{major:major}
         })
         .then(function(res){
@@ -64,7 +64,7 @@
     },
     created: function (){
       let vthis = this;
-        axios.get('./static/php/expert.php',{
+        axios.get('http://47.94.14.210/myProject/camtest/static/php/expertGithub.php',{
           params:{major:'制造专家'}
         })
         .then(function(res){
